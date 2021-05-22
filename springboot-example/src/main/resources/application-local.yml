@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/example?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+    password: 123456
+
+myprops:
+  showpagemaps:
+    1: 张三
+    2: 李四
+    3: 王五
+  list:
+    - 小王先生
+    - 青山小站
+    - 百度百科
+    - 百度云
+    - 腾讯云
+    - 良心云
+    - 套路云
