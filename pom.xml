@@ -9,7 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0</version>
 
-
+    <modules>
+        <module>poi-examples</module>
+    </modules>
 
     <repositories>
         <repository>
