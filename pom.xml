@@ -18,6 +18,7 @@
         <module>poi-examples</module>
         <module>video-record</module>
         <module>WinLog</module>
+        <module>console-example</module>
     </modules>
 
     <repositories>
