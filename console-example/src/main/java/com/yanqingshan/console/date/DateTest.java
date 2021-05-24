@@ -16,7 +16,7 @@ import java.util.Scanner;
  * @date 2021-05-24
  */
 public class DateTest {
-    public void write() {
+    public static void write() {
         List<String> a = new ArrayList<String>();
         a.add("2021-1");
         Console.log(RandomUtil.randomNumbers(4));
