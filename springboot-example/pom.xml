@@ -8,8 +8,8 @@
 		<version>2.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.yanqingshan</groupId>
-	<artifactId>springboot</artifactId>
+	<groupId>com.yanqingshan.springboot</groupId>
+	<artifactId>springboot-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-example</name>
 	<description>Demo project for Spring Boot</description>
