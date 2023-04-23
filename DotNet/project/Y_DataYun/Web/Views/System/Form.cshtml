@@ -1,0 +1,171 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css?v=4.4.0" rel="stylesheet" />
+    <link href="~/Content/css/plugins/iCheck/custom.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.min.css?v=4.1.0" rel="stylesheet" />
+    <script src="~/Content/js/jquery.min.js?v=2.1.4"></script>
+    <script src="~/Content/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="~/Content/js/content.min.js?v=1.0.0"></script>
+    <script src="~/Content/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.serializeJSON/2.9.0/jquery.serializejson.js"></script>
+    <link href="~/Content/js/plugins/layer/skin/layer.css" />
+    <script src="~/Content/js/plugins/layer/layer.min.js"></script>
+    <script>
+        var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+        $(function () {
+
+
+            var keyValue = queryStringByName('keyValue');//获取前台传入参数
+            var Level = queryStringByName('Level');//获取前台传入参数
+            var Parent = queryStringByName('Parent');//获取前台传入参数
+            if (Level != "") {
+                $('#Level').val(Level);
+            }
+            if (Parent != "") {
+                console.info(Parent);
+                $('#Parent').val(Parent);
+                if (Parent != 0)
+                    $('#Level').val(2);
+                else
+                    $('#Level').val(1);
+            }
+            console.info(Level);
+            getdata(keyValue);
+            $('#gb').click(function () {
+                parent.layer.close(index);
+            });
+        });
+        function getdata(keyValue) {
+            $.ajax({
+                url: '../System/GetJsonForm',
+                type: 'post',
+                data: { keyValue: keyValue },
+                async: false,
+                dataType: 'json',
+                success: function (data) {
+
+                    console.info(data.data);
+                    data = data.data;
+                    if (data != null) {
+                        $('#GUID').val(data.GUID);
+                        $('#Parent').val(data.Parent);
+                        $('#Level').val(data.Level);
+                        $('#Content').val(data.Content);
+                        $('#Remark').val(data.Remark);
+                    }
+
+                },
+                error: function (data) {
+
+                }
+
+            });
+        }
+
+
+
+        //获取传过来的参数
+        function queryStringByName(queryName) {
+            var str = location.href; //取得整个地址栏
+            if (str.indexOf("?") > -1) {
+                var queryParam = str.substring(str.indexOf("?") + 1);
+                //如果有多个参数
+                //if (queryParam.indexOf("&") > -1)
+                var param = queryParam.split("&");
+                for (var a = 0; a < param.length; a++) {
+                    var query = param[a].split("=");
+                    if (query[0] == queryName) {
+                        return query[1];
+                    }
+                }
+            }
+            return "";
+        }
+
+
+        function saveform() {
+            var data = $('#form').serializeJSON();
+            console.info(data);
+            //debugger;
+            $.ajax({
+                url: '../System/SaveForm',
+                data: data,
+                type: 'post',
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+
+                    parent.layer.close(index);
+                }, error: function (data) {
+
+                }
+            });
+        }
+        //function CloseFrame() {
+        //$('#closeIframe').click(function () {
+        //    var val = $('#name').val();
+        //    if (val === '') {
+        //        parent.layer.msg('请填写标记');
+        //        return;
+        //    }
+        //    parent.layer.msg('您将标记 [ ' + val + ' ] 成功传送给了父窗口');
+
+        //});
+
+        //}
+
+    </script>
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>字典表单</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form id="form" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">字典名称</label>
+                                <div class="col-sm-10">
+                                    <input type="hidden" name="GUID" id="GUID" />
+                                    <input type="hidden" name="Level" id="Level" />
+                                    <input type="hidden" name="Parent" id="Parent" />
+                                    <input type="text" name="Content" id="Content" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">字典备注</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="Remark" id="Remark" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <a class="btn btn-primary" onclick="saveform()">保存内容</a>
+                                    <button class="btn btn-white" id="gb">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

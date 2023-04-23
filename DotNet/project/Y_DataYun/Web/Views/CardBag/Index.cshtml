@@ -1,0 +1,147 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的卡包</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="~/Content/css/bootstrap.min.css?v=3.3.6" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" />
+    <link href="~/Content/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/style.min.css?v=4.1.0" rel="stylesheet" />
+    <link href="~/Content/js/plugins/layer/skin/layer.css" />
+
+    <script src="~/Content/js/jquery.min.js?v=2.1.4"></script>
+    <script src="~/Content/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="~/Content/js/content.min.js?v=1.0.0"></script>
+    <script src="~/Content/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="~/Content/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Content/js/plugins/layer/layer.min.js"></script>
+    <script>
+        $(function () {
+            LoadData();
+
+        });
+        function LoadData() {
+            $('.dataTables-example').DataTable({
+                ajax: "../CardBag/GetCardBagJson",
+                paging: true,//关闭分页
+                ordering: false,//关闭排序
+                searching: false,//禁用搜索
+                deferRender: true,//当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+                destroy: true,//允许重建
+                autoWidth: true,//自动宽度
+                processing: true, //DataTables载入数据时，是否显示进度条
+                serverSide: false,//开启服务器模式
+                lengthMenu: [5, 10, 15],   // 显示每页显示的条数
+                info: true,                //控制是否显示表格左下角的信息
+                pageLength: 5,      // 每页显示的条数
+                //stripeClasses: ["odd", "even"],   // 为奇偶行添加样式
+                //order: [0, 'asc'],   //asc升序   desc降序 // 下标为2，第三列 生序排列
+                deferRender: true,   // 延迟渲染
+                columns: [
+                    { "data": "id" },
+                    { "data": "CardId" },
+                    { "data": "Money" },
+                    { "data": "CardBagType" },
+                    { "data": "CreateTime" },
+                    { "data": "Remark" },
+                    { "data": null },
+
+                    //gid
+                    //CardId 
+                    //Money = ite
+                    //CardBagType
+                    //CreateTime 
+                    //Remark = it
+                ],
+                language: {
+                    "sProcessing": "处理中...",
+                    "sLengthMenu": "显示 _MENU_ 项结果",
+                    "sZeroRecords": "没有匹配结果",
+                    "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                    "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                    "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                    "sInfoPostFix": "",
+                    "sSearch": "搜索:",
+                    "sUrl": "",
+                    "sEmptyTable": "表中数据为空",
+                    "sLoadingRecords": "载入中...",
+                    "sInfoThousands": ",",
+                    "oPaginate": {
+                        "sFirst": "首页",
+                        "sPrevious": "上页",
+                        "sNext": "下页",
+                        "sLast": "末页"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": 以升序排列此列",
+                        "sSortDescending": ": 以降序排列此列"
+                    }
+                },
+                columnDefs: [
+                    {
+                        "render": function (data, type, row) {
+                            return '<button type="button" class="btn btn-w-m btn-success" onclick="promptAlert(\'' + row.gid + '\')">修改</button>';
+                        },
+                        "targets": 6
+                    }
+                ],
+            });
+        };
+    </script>
+</head>
+<body class="gray-bg">
+    <div class="row wrapper wrapper-content animated fadeInRight">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>我的卡包</h5>
+                    <div class="ibox-tools">
+                        @*<a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>*@
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">刷新</a>
+                            </li>
+                            <li>
+                                <a href="#">添加</a>
+                            </li>
+                        </ul>
+                        @*<a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>*@
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>编号</th>
+                                <th>卡帐号</th>
+                                <th>余额</th>
+                                <th>卡包类型</th>
+                                <th>创建时间</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
