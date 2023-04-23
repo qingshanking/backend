@@ -1,0 +1,89 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>角色表单</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="~/Content/layui/css/layui.css" media="all">
+</head>
+<body>
+
+    <form class="layui-form" action="" lay-filter="layuiadmin-form-role" id="layuiadmin-form-role" style="padding: 20px 30px 0 0;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="Name" id="Name" lay-verify="required" placeholder="请输入角色名称" autocomplete="off" class="layui-input" value="@(Model!=null?Model.Name:"")">
+                <input type="hidden" name="Id" id="Id" value="@(Model!=null?Model.Id:"")" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">权限说明</label>
+            <div class="layui-input-block">
+                <textarea type="text" name="Explain" autocomplete="off" class="layui-textarea">@(Model!=null?Model.Explain : "")</textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-layout-admin">
+            <div class="layui-input-block">
+                <div class="layui-footer" style="left: 0;text-align:center;">
+                    <button class="layui-btn" lay-submit lay-filter="LAY-user-role-submit" id="LAY-user-role-submit">保存</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="~/Content/layui/layui.js"></script>
+    <script>
+        layui.config({
+            base: '../Content/' //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+        }).use(['index', 'form', 'layer'], function () {
+            var $ = layui.$,
+                admin = layui.admin,
+                element = layui.element,
+                layer = layui.layer,
+                form = layui.form,
+                multiSelect = layui.multiSelect;
+            /* 监听提交 */
+            form.on('submit(LAY-user-role-submit)', function (data) {
+                //console.info(data.field);
+                //layer.alert(JSON.stringify(data.field), {
+                //    title: '最终的提交信息'
+                //})
+                //return false;
+                $.ajax({
+                    url: '../User/SaveRoleForm',
+                    type: 'post',
+                    data: data.field,
+                    async: false,
+                    dataType: 'json',
+                    headers: {
+                        [layui.setter.request.tokenName]: layui.data(layui.setter.tableName)[layui.setter.request.tokenName],
+                    },
+                    success: function (data) {
+                        if (data.code == 0) {
+                            layer.msg(data.msg, { icon: 1, offset: "auto", time: 2000 });
+                            //调用父级刷新方法。
+                            parent.layui.table.reload('YRDF-user-role');
+                            //关闭本页面
+                            parent.layer.close(parent.layer.getFrameIndex(window.name));
+                        }
+                        else {
+                            layer.msg(data.msg, { icon: 2, offset: "auto", time: 2000 });
+                            return false;
+                        }
+                    }
+                });
+            });
+        })
+    </script>
+</body>
+</html>

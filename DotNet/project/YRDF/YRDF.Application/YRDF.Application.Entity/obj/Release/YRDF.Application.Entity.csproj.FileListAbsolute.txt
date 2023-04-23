@@ -1,0 +1,16 @@
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\YRDF.Application.Entity.dll.config
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\YRDF.Application.Entity.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\YRDF.Application.Entity.pdb
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\EntityFramework.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\EntityFramework.xml
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\obj\Release\YRDF.Application.Entity.csprojAssemblyReference.cache
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\obj\Release\YRDF.Application.Entity.csproj.CoreCompileInputs.cache
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\obj\Release\YRDF.Application.Entity.csproj.CopyComplete
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\obj\Release\YRDF.Application.Entity.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\obj\Release\YRDF.Application.Entity.pdb
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\Newtonsoft.Json.dll
+D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Entity\bin\Release\Newtonsoft.Json.xml

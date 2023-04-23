@@ -1,0 +1,9 @@
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\bin\Release\YRDF.Util.dll
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\bin\Release\YRDF.Util.pdb
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\obj\Release\YRDF.Util.csprojAssemblyReference.cache
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\obj\Release\YRDF.Util.csproj.CoreCompileInputs.cache
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\obj\Release\YRDF.Util.dll
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\obj\Release\YRDF.Util.pdb
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\bin\Release\Newtonsoft.Json.dll
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\bin\Release\Newtonsoft.Json.xml
+D:\Projects\GitHub\YRDF\YRDF.Util\YRDF.Util\obj\Release\YRDF.Util.csproj.CopyComplete

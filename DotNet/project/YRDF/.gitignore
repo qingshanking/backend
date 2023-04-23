@@ -1,0 +1,13 @@
+.vs/
+packages/
+YRDF.Application/YRDF.Application.Web/bin/
+YRDF.Application/YRDF.Application.Web/obj/
+YRDF.Application/YRDF.Application.Web/log/
+YRDF.Application/YRDF.Application.Busines/bin/
+YRDF.Application/YRDF.Application.Busines/obj/
+YRDF.Application/YRDF.Application.YRDF.Application.Entity/bin/
+YRDF.Application/YRDF.Application.YRDF.Application.Entity/obj/
+YRDF.Application/YRDF.Application.YRDF.Application.IService/bin/
+YRDF.Application/YRDF.Application.YRDF.Application.IService/obj/
+YRDF.Application/YRDF.Application.YRDF.Application.Service/bin/
+YRDF.Application/YRDF.Application.YRDF.Application.Service/obj/

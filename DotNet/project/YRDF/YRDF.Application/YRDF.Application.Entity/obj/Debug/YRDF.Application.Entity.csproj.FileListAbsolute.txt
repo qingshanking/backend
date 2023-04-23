@@ -1,0 +1,13 @@
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\YRDF.Application.Entity.dll.config
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\YRDF.Application.Entity.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\YRDF.Application.Entity.pdb
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\EntityFramework.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\EntityFramework.xml
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\obj\Debug\YRDF.Application.Entity.csproj.CoreCompileInputs.cache
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\obj\Debug\YRDF.Application.Entity.csproj.CopyComplete
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\obj\Debug\YRDF.Application.Entity.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Entity\obj\Debug\YRDF.Application.Entity.pdb

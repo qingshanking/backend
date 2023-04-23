@@ -1,0 +1,145 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>用户表单</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="~/Content/layui/css/layui.css" media="all">
+</head>
+<body>
+    <form action="" class="layui-form" lay-filter="layuiadmin-form-admin" id="layuiadmin-form-admin" style="padding: 20px 30px 0 0;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">登录名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="LoginName" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label">用户昵称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="NickName" lay-verify="required" placeholder="请输入用户昵称" autocomplete="off" class="layui-input">
+            </div>
+
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-inline">
+                <input type="radio" name="Gender" value="1" title="男" checked="">
+                <input type="radio" name="Gender" value="0" title="女">
+            </div>
+            <label class="layui-form-label">手机</label>
+            <div class="layui-input-inline">
+                <input type="text" name="Phone" lay-verify="phone" placeholder="请输入号码" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">类型</label>
+            <div class="layui-input-inline">
+                <input type="radio" name="IsSys" value="1" title="前端" checked="">
+                <input type="radio" name="IsSys" value="0" title="后端">
+            </div>
+
+            <label class="layui-form-label">邮箱</label>
+            <div class="layui-input-inline">
+                <input type="text" name="email" lay-verify="email" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色</label>
+            <div class="layui-input-inline">
+                <select name="Role" lay-filter="Role" lay-verify="required" id="Role"></select>
+            </div>
+        </div>
+        <div class="layui-form-item layui-disabled">
+            <input type="hidden" name="Id" />
+        </div>
+
+        <div class="layui-form-item layui-layout-admin">
+            <div class="layui-input-block">
+                <div class="layui-footer" style="left: 0;text-align:center;">
+                    <button class="layui-btn" lay-submit lay-filter="LAY-user-submit" id="LAY-user-submit">保存</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="~/Content/layui/layui.js"></script>
+    <script>
+        layui.config({
+            base: '../Content/' //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+        }).use(['index', 'form'], function () {
+            var $ = layui.$,
+                admin = layui.admin,
+                element = layui.element,
+                layer = layui.layer,
+                laydate = layui.laydate,
+                form = layui.form;
+
+            //加载角色选择
+            admin.req({
+                url: '../User/GetSelectList',
+                type: 'post',
+                headers: {
+                    [layui.setter.request.tokenName]: layui.data(layui.setter.tableName)[layui.setter.request.tokenName],
+                },
+                done: function (res) {
+                    $('#Role').append('<option value="">请选择</option>');
+                    if (res.code == 0) {
+                        $.each(res.data, function (ee, rr) {
+                            console.info(rr);
+                            if (rr.id == '')
+                                $('#Role').append('<option value="' + rr.id + '" selected="">' + rr.name + '</option>');
+                            else
+                                $('#Role').append('<option value="' + rr.id + '">' + rr.name + '</option>');
+                        });
+                    }
+                    form.render('select');
+                }
+            });
+
+            /* 监听提交 */
+            form.on('submit(LAY-user-submit)', function (data) {
+                console.info(data.field);
+                layer.alert(JSON.stringify(data.field), {
+                    title: '最终的提交信息'
+                });
+                //return false;
+                $.ajax({
+                    url: '../User/SaveUserForm',
+                    type: 'post',
+                    data: data.field,
+                    async: false,
+                    dataType: 'json',
+                    headers: {
+                        [layui.setter.request.tokenName]: layui.data(layui.setter.tableName)[layui.setter.request.tokenName],
+                    },
+                    success: function (data) {
+                        if (data.code == 0) {
+                            layer.msg(data.msg, { icon: 1, offset: "auto", time: 2000 });
+                            //调用父级刷新方法。
+                            //parent.layui.table.reload('YRDF-user-role');
+                            //关闭本页面
+                            parent.layer.close(parent.layer.getFrameIndex(window.name));
+                        }
+                        else {
+                            layer.msg(data.msg, { icon: 2, offset: "auto", time: 2000 });
+                            return false;
+                        }
+                    }
+                });
+            });
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Projects\GitHub\YRDF\YRDF.Application\YRDF.Application.Web\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>05/08/2020 10:24:37</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>05/08/2020 10:24:37</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/27/2017 12:59:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>07/07/2017 17:39:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>07/07/2017 17:44:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/27/2017 15:30:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>07/07/2017 17:44:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>07/07/2017 17:44:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/27/2017 15:33:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>06/28/2017 15:05:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 00:56:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>06/27/2017 11:17:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Busines.dll">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Busines.pdb">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Entity.dll">
+      <publishTime>05/08/2020 10:24:24</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Entity.dll.config">
+      <publishTime>04/26/2020 00:12:18</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Entity.pdb">
+      <publishTime>05/08/2020 10:24:24</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.IService.dll">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.IService.pdb">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Service.dll">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Service.pdb">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Web.dll">
+      <publishTime>05/08/2020 10:24:29</publishTime>
+    </File>
+    <File Include="bin/YRDF.Application.Web.pdb">
+      <publishTime>05/08/2020 10:24:29</publishTime>
+    </File>
+    <File Include="bin/YRDF.Data.Repository.dll">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Data.Repository.dll.config">
+      <publishTime>12/18/2018 15:47:48</publishTime>
+    </File>
+    <File Include="bin/YRDF.Data.Repository.pdb">
+      <publishTime>05/08/2020 10:24:25</publishTime>
+    </File>
+    <File Include="bin/YRDF.Util.dll">
+      <publishTime>05/08/2020 10:24:24</publishTime>
+    </File>
+    <File Include="bin/YRDF.Util.pdb">
+      <publishTime>05/08/2020 10:24:24</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>01/28/2015 04:02:22</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>01/28/2015 04:02:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="Content/config.js">
+      <publishTime>05/08/2020 10:20:36</publishTime>
+    </File>
+    <File Include="Content/json/console/prograss.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/console/top-card.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/console/top-search.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/content/comment.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/content/list.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/content/tags.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/forum/list.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/forum/replys.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/layer/photos.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/layim/getList.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/layim/getMembers.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/mall/order.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/menu.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/menu1.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/message/all.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/message/detail.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/message/direct.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/message/new.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/message/notice.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/table/demo.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/table/demo2.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/table/user.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/table/user30.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/upload/demo.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/forget.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/login.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/logout.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/reg.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/resetpass.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/session.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/user/sms.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/useradmin/mangadmin.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/useradmin/role.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/useradmin/webuser.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/workorder/demo.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/json/说明.txt">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/layui.css">
+      <publishTime>06/06/2019 12:19:13</publishTime>
+    </File>
+    <File Include="Content/layui/css/layui.mobile.css">
+      <publishTime>06/06/2019 12:19:13</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/code.css">
+      <publishTime>06/06/2019 12:19:14</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/laydate/default/laydate.css">
+      <publishTime>06/06/2019 12:19:16</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layer/default/icon-ext.png">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layer/default/icon.png">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layer/default/layer.css">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layer/default/loading-0.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layer/default/loading-1.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layer/default/loading-2.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/html/chatlog.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/html/find.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/html/getmsg.json">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/html/msgbox.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/layim.css">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/mobile/layim.css">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/skin/1.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/skin/2.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/skin/3.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/skin/4.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/skin/5.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/skin/logo.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/css/modules/layim/voice/default.mp3">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/font/iconfont.eot">
+      <publishTime>06/06/2019 12:19:13</publishTime>
+    </File>
+    <File Include="Content/layui/font/iconfont.svg">
+      <publishTime>06/06/2019 12:19:14</publishTime>
+    </File>
+    <File Include="Content/layui/font/iconfont.ttf">
+      <publishTime>06/06/2019 12:19:15</publishTime>
+    </File>
+    <File Include="Content/layui/font/iconfont.woff">
+      <publishTime>06/06/2019 12:19:16</publishTime>
+    </File>
+    <File Include="Content/layui/font/iconfont.woff2">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/0.gif">
+      <publishTime>06/06/2019 12:19:13</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/1.gif">
+      <publishTime>06/06/2019 12:19:14</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/10.gif">
+      <publishTime>06/06/2019 12:19:16</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/11.gif">
+      <publishTime>06/06/2019 12:19:16</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/12.gif">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/13.gif">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/14.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/15.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/16.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/17.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/18.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/19.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/2.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/20.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/21.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/22.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/23.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/24.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/25.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/26.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/27.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/28.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/29.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/3.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/30.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/31.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/32.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/33.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/34.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/35.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/36.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/37.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/38.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/39.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/4.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/40.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/41.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/42.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/43.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/44.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/45.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/46.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/47.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/48.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/49.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/5.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/50.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/51.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/52.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/53.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/54.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/55.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/56.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/57.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/58.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/59.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/6.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/60.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/61.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/62.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/63.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/64.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/65.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/66.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/67.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/68.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/69.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/7.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/70.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/71.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/8.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/images/face/9.gif">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/carousel.js">
+      <publishTime>06/06/2019 12:19:14</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/code.js">
+      <publishTime>06/06/2019 12:19:15</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/colorpicker.js">
+      <publishTime>06/06/2019 12:19:16</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/element.js">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/flow.js">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/form.js">
+      <publishTime>06/06/2019 12:19:17</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/jquery.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/laydate.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/layedit.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/layer.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/layim.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/laypage.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/laytpl.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/mobile.js">
+      <publishTime>06/06/2019 12:19:16</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/rate.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/slider.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/table.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/transfer.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/tree.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/upload.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/lay/modules/util.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/layui.all.js">
+      <publishTime>06/06/2019 12:19:18</publishTime>
+    </File>
+    <File Include="Content/layui/layui.js">
+      <publishTime>06/06/2019 12:19:13</publishTime>
+    </File>
+    <File Include="Content/lib/admin.js">
+      <publishTime>07/22/2019 18:32:45</publishTime>
+    </File>
+    <File Include="Content/lib/extend/echarts.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/lib/extend/echartsTheme.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/lib/index.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/lib/view.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/common.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/console.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/contlist.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/forum.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/im.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/message.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/sample.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/senior.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/set.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/user.js">
+      <publishTime>05/06/2020 10:22:49</publishTime>
+    </File>
+    <File Include="Content/modules/useradmin.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/modules/workorder.js">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/admin.css">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/login.css">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/bg-none.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/layui-logo.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/logo-black.png">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/logo.png">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/template/character.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/template/huge.jpg">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/res/template/portrait.png">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/style/template.css">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/tpl/layim/demo.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/tpl/system/about.html">
+      <publishTime>04/25/2020 00:00:46</publishTime>
+    </File>
+    <File Include="Content/tpl/system/get.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/tpl/system/more.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/tpl/system/theme.html">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/tpl/system/说明.txt">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Content/tpl/说明.txt">
+      <publishTime>05/31/2018 02:24:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/18/2018 15:47:48</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/26/2020 01:01:21</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>05/08/2020 10:24:31</publishTime>
+    </File>
+    <File Include="Views/Home/Console.cshtml">
+      <publishTime>04/24/2020 22:53:21</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/25/2020 00:33:36</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>05/08/2020 10:21:19</publishTime>
+    </File>
+    <File Include="Views/Register/Index.cshtml">
+      <publishTime>04/24/2020 20:24:06</publishTime>
+    </File>
+    <File Include="Views/System/Email.cshtml">
+      <publishTime>04/25/2020 00:31:41</publishTime>
+    </File>
+    <File Include="Views/System/WebSite.cshtml">
+      <publishTime>04/25/2020 00:31:25</publishTime>
+    </File>
+    <File Include="Views/User/AdminForm.cshtml">
+      <publishTime>05/06/2020 17:16:14</publishTime>
+    </File>
+    <File Include="Views/User/AdminList.cshtml">
+      <publishTime>05/06/2020 17:17:26</publishTime>
+    </File>
+    <File Include="Views/User/Info.cshtml">
+      <publishTime>04/24/2020 23:55:18</publishTime>
+    </File>
+    <File Include="Views/User/Password.cshtml">
+      <publishTime>04/24/2020 23:55:37</publishTime>
+    </File>
+    <File Include="Views/User/RoleForm.cshtml">
+      <publishTime>05/06/2020 17:02:57</publishTime>
+    </File>
+    <File Include="Views/User/RoleList.cshtml">
+      <publishTime>05/06/2020 17:24:17</publishTime>
+    </File>
+    <File Include="Views/User/UserForm.cshtml">
+      <publishTime>05/08/2020 09:39:04</publishTime>
+    </File>
+    <File Include="Views/User/UserList.cshtml">
+      <publishTime>05/08/2020 08:46:30</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>12/18/2018 15:47:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/29/2020 17:10:37</publishTime>
+    </File>
+    <File Include="XmlConfig/database.config">
+      <publishTime>04/26/2020 00:12:44</publishTime>
+    </File>
+    <File Include="XmlConfig/system.config">
+      <publishTime>04/24/2020 19:58:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

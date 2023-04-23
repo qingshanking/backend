@@ -1,0 +1,5 @@
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Service\bin\Debug\YRDF.Application.Service.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Service\bin\Debug\YRDF.Application.Service.pdb
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Service\obj\Debug\YRDF.Application.Service.csproj.CoreCompileInputs.cache
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Service\obj\Debug\YRDF.Application.Service.dll
+C:\Project\YRDF\V0.1.0\YRDF.Application\YRDF.Application.Service\obj\Debug\YRDF.Application.Service.pdb
